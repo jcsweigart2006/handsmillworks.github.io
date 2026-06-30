@@ -1,0 +1,16 @@
+<html>
+<head>
+<Title>H and S Millworks</Title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">body{margin:40px auto;max-width:650px;line-height:1.6;font-size:18px;color:#444;padding:0 10px}h1,h2,h3{line-height:1.2} h1 {text-align: center;}  p {text-align: center;} h2 {text-align: center;}</style>
+</head>
+<body>
+<h1>H and S Millworks</h1>
+<h2>Our Mission Statement</h2>
+<p>We combine innovative design with unrivaled craftsmanship to deliver the finest millworks products in the industry.</p>
+
+<h2>Contact Us</h2>
+<p>717-254-3634</p>
+<p>handsmillworks@gmail.com</p>
+</body>
+</html>
