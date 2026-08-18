@@ -9,6 +9,13 @@ h2 {text-align: center;}
   display: flex;
   justify-content: center;
 }
+.box {
+  display; flex;
+  justify-context: center;
+  font-size:18px;
+  color: #2e2412;
+  background-color: #fff;
+}
 .container {
   padding: 2rem;
 }
@@ -30,6 +37,7 @@ h2 {text-align: center;}
   flex: 1 0 %100;
   scroll-snap-align: start;
   object-fit: cover;
+  border-radius: 50px;
 }
 .slider-nav {
   display: flex;
@@ -51,17 +59,72 @@ h2 {text-align: center;}
 .slider-nav a:hover {
   opacity: 1;
 }
+.contact-container{
+  height: 100vh;
+  display; flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact-column{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.contact-column-title h2{
+  font-weight: 600;
+  color: #d8d1bb;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.contact-column-title hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #d8d1bb;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-radius: 50px;
+}
+.contact-column textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contact-inputs:focus{
+  border: 2px solid #d8d1bb;
+}
+.contact-inputs::placeholder{
+  color: #a9a9a9;
+}
+.contact-column button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-side: 16px;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+}
 </style>
 </head>
 <body>
 <div class="logo">
   <img src="logo.png" />
 </div>
+<div class="box">
 <h2>Our Mission Statement</h2>
 <p>We combine innovative design with unrivaled craftsmanship to deliver the finest millworks products in the industry.</p>
-<h2>Contact Us</h2>
-<p>717-254-3634</p>
-<p>handsmillworks@gmail.com</p>
+<h2>See Us On Facebook</h2>
+<p>https://www.facebook.com/p/H-S-Millworks-61574516703948/</p>
+</div>
 <section class="container">
   <div class="slider-wrapper">
     <div class="slider">
@@ -108,5 +171,18 @@ h2 {text-align: center;}
     </div>
   </div>
 </section>
+</div class="contact-container">
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact-column">
+    <div class="contact-left-title">
+      <h2>Contact Us</h2>
+      <hr>
+    </div>
+    <input type="hidden" name="access_key" value="46348480-dc3e-47ad-8761-d65749a3098f">
+    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+    <button type="submit">Submit </button>
+    
+  </form>
 </body>
 </html>
